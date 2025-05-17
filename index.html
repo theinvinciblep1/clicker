@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Click Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 30px;
+    }
+    .counter-box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: inline-block;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #count {
+      font-size: 36px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="counter-box">
+    <h2>On-Time Task Clicker</h2>
+    <button onclick="incrementCount()">+1 Task</button>
+    <div id="count">0</div>
+  </div>  <script>
+    let count = 0;
+    function incrementCount() {
+      count++;
+      document.getElementById("count").innerText = count;
+    }
+  </script></body>
+</html>
